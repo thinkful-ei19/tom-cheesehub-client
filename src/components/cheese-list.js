@@ -1,9 +1,6 @@
 import React from 'react';
 
 export default class CheeseList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const cheese = this.props.cheese.map((cheese, index) => (
             <li className="list-wrapper" key={index}>
