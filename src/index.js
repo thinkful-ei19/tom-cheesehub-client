@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import CheeseList from './components/cheese-list';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<CheeseList cheese= {[
+    "Bath Blue",
+    "Barkham Blue",
+    "Buxton Blue"
+]} />, document.getElementById('root'));
 registerServiceWorker();
