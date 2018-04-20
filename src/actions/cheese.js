@@ -22,7 +22,7 @@ export const fetchCheesesSuccess = cheeses => ({
 
 
 export const fetchCheeses = () => dispatch => {
-    fetch(`${API_BASE_URL}/cheeses`).then(res => {
+    fetch(`${API_BASE_URL}/api/cheeses`).then(res => {
         if (!res.ok) {
             return Promise.reject(res.statusText);
         }

@@ -1,4 +1,7 @@
-import * as actions from '../actions';
+
+//eslint ignore next line
+import {FETCH_CHEESE_REQUEST, FETCH_CHEESES_SUCCESS, FETCH_CHEESE_ERROR} from '../actions/cheese';
+
 
 const initialState = {
     cheeses: [],
@@ -14,7 +17,7 @@ const cheeseReducer = (state = initialState, action) => {
             error: null
         });
     }
-    if (action.type === FETCH_CHEESE_SUCCESS) {
+    if (action.type === FETCH_CHEESES_SUCCESS) {
         return Object.assign({}, state, {
             cheeses: action.cheeses,
             loading: false,
